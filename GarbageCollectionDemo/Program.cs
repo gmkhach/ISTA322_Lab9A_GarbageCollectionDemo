@@ -10,6 +10,11 @@ namespace GarbageCollectionDemo
     {
         static void Main(string[] args)
         {
+            using (Calculator Calculator = new Calculator())
+            {
+                Console.WriteLine($"120 / 15 = {Calculator.Divide(120, 15)}");
+            }
+            Console.WriteLine("Program finishing");
         }
     }
 }
